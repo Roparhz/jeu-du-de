@@ -1,0 +1,52 @@
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css">
+
+    </head>
+
+    <body>
+        <div class="nimp">
+
+        <header class="content">
+            <h1>"1 chance sur 6"</h1>
+        </header>
+        <main>
+
+            <div class="section1">
+                <p>Tente de deviner le chiffre entre 1 et 6</p>
+                <p>Lance le dé et ensuite devine le chiffre qu'il aurait fait !</p>
+            </div>
+            <div class="section2">
+                <div class="btn">
+                    <input class="btn1" type="button" value="Lance le Dé">
+                    <input id="guessField" class="guessField" type="number" min="1" max="6">
+                    <input type="submit" value="Valider" class="guessSubmit">
+                </div>
+            </div>
+        </main>
+
+        <footer class="result">
+            <p id="reponse"></p>
+            <p id="result"></p>
+            
+        </footer>
+        <script src="index.js"></script>
+        <script >if ( window.addEventListener ) {
+            var kkeys = [], konami = "38,38,40,40,37,39,37,39,66,65";
+            window.addEventListener("keydown", function(e){
+            kkeys.push( e.keyCode );
+            if ( kkeys.toString().indexOf( konami ) >= 0 ) {
+            alert("Nous Sommes Les Anonymous !!");
+            document.querySelector(".nimp").classList.add("bodyIverse");
+            //document.querySelector(".bloc2").classList.add("effect2");
+            }
+            }, true);
+            }
+            </script>
+    </div>
+    </body>
+
+</html>

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+.content {
+    text-align: center;
+    color:red;
+    padding-bottom: 5rem;
+    
+}
+h1{
+    padding-top: 10rem;
+}
+
+.section1 {
+    text-align: center;
+    color:white;
+}
+.section2 {
+    
+    padding: 15rem;
+}
+.btn{
+    padding-left: 21rem;
+}
+.btn1{
+    display: inline-block;
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+}
+
+.btn1:hover,
+.btn1:focus{
+    background-color: rgba(255, 0, 0, 1);
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2018/12/05/11/16/dices-3857549_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+}
+footer{
+   text-align: center;
+    color: purple;
+}
+
+
+
+.bodyIverse{
+    /* transform: rotate(360deg); */ /* Équivalent à rotateZ(45deg) */
+    animation: pc ease-in-out infinite 4s;
+   /*  animation-iteration-count: infinite; */
+   transform-origin: 50% 50%; 
+  }
+  @keyframes pc{
+    0% { transform: rotate(0deg);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.5;
+    }
+    100% {transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  .effect2{
+      animation: effect2 ease-in-out infinite 4s;
+   /*  animation-iteration-count: infinite; */
+   transform-origin: 50% 50%; 
+  }
+  @keyframes effect2{
+    0% { transform: rotate(0deg);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.5;
+    }
+    100% {transform: rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
